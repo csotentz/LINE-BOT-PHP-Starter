@@ -16,7 +16,9 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
-			$text = "ผลิตภัณฑ์ตอนนี้มีดังนี้<br>ทดสอบ";
+			if($text=='ตอนนี้มีผลิตภัณฑ์มีอะไรบ้าง'){
+				$text = "ผลิตภัณฑ์ตอนนี้มีดังนี้ ทดสอบ";
+			}
 
 			// Build message to reply back
 			$messages = [
