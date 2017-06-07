@@ -16,6 +16,8 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
+			$text = "ผลิตภัณฑ์ตอนนี้มีดังนี้<br>ทดสอบ";
+
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
